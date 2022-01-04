@@ -4,12 +4,12 @@ import pygame
 from Constant import load_image, WIDTH, HEIGHT, FPS
 
 
-def terminate():
-    pygame.quit()
-    sys.exit()
-
-
 def final_screen(screen, clock):
+
+    def terminate():
+        pygame.quit()
+        sys.exit()
+
     intro_text = ["Финальный экран",
                   "Спасибо за игру мы рады Вас видеть всегда :)",
                   ""]
