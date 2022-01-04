@@ -1,4 +1,7 @@
 def load_image(name, color_key=None):
+    import pygame
+    import os
+    import sys
     fullname = os.path.join('../data', name)
     if not os.path.isfile(fullname):
         print(f'Такого файла нет')
