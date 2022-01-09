@@ -1,4 +1,5 @@
 #Мухаметшин Дамир
+from imports import *
 
 
 def counter(name):

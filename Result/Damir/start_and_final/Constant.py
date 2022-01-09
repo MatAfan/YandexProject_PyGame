@@ -2,7 +2,7 @@ from imports import *
 
 FPS = 50
 WINDOW_SIZE = WINDOW_WIDTH, WINDOW_HEIGHT = 480, 480
-MAPS_DIR = "levels/maps/"
+MAPS_DIR = "Result/levels/maps/"
 TILE_SIZE = 32
 
 

@@ -78,14 +78,16 @@ def main():
 
     labyrinth = Labyrinth('testmap.txt', [0, 2], 2)
     for y in range(len(labyrinth.map)):
-        if '3' in y:
-            hero_x = labyrinth.map[y].index(3)
+        if '3' in labyrinth.map[y]:
+            hero_x = labyrinth.map[y].index('3')
             hero_y = y
-    hero = Hero((hero_x, hero_y))
-    game = Game(labyrinth, hero)
+            hero = Hero((hero_x, hero_y))
 
-    clock = pygame.time.Clock()
-    start_screen(screen, clock)
+            game = Game(labyrinth, hero)
+
+            clock = pygame.time.Clock()
+            start_screen(screen, clock)
+            break
     running = True
     while running:
         for event in pygame.event.get():

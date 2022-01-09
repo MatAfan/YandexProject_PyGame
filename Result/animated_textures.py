@@ -1,7 +1,4 @@
-import os
-import sys
-
-import pygame
+from imports import *
 pygame.init()
 FPS = 10
 clock = pygame.time.Clock()
