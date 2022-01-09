@@ -47,7 +47,7 @@ def load_image(name, colorkey=None):
 
 all_sprites = pygame.sprite.Group()
 
-dragon = AnimatedSprite(load_image("Противник2.png"), 4, 6, 84, 84)
+dragon = AnimatedSprite(load_image("Enemy.png"), 2, 2, 84, 84)
 
 if __name__ == '__main__':
     pygame.init()

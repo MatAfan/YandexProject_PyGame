@@ -1,9 +1,6 @@
 #Мухаметшин Дамир
 
 
-import sqlite3
-
-
 def counter(name):
     con = sqlite3.connect('count.db')
     cur = con.cursor()

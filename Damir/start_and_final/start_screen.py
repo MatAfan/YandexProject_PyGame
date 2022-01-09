@@ -1,16 +1,15 @@
-import os
-import sys
-from final_screen import main_fin
-from Constant import load_image, WIDTH, HEIGHT, FPS
-import pygame
-
-def terminate():
-    main_fin()
-    pygame.quit()
-    sys.exit()
+from imports import *
 
 
 def start_screen(screen, clock):
+
+    from Constant import load_image, WIDTH, HEIGHT, FPS
+
+    def terminate():
+        main_fin()
+        pygame.quit()
+        sys.exit()
+
     intro_text = ["Лабиринт", "",
                   "Правила игры",
                   "пока их нет",

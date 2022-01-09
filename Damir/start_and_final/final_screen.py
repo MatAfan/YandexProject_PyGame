@@ -1,7 +1,4 @@
-import sys
-
-import pygame
-from Constant import load_image, WIDTH, HEIGHT, FPS
+from imports import *
 
 
 def final_screen(screen, clock):

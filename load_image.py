@@ -1,15 +1,8 @@
-import os
-import sys
-
-import pygame
-
-
-FPS = 50
-WIDTH = 800
-HEIGHT = 450
+from imports import *
 
 
 def load_image(name, color_key=None):
+
     fullname = os.path.join('../data', name)
     if not os.path.isfile(fullname):
         print(f'Такого файла нет')

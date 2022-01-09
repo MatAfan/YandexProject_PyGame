@@ -1,7 +1,12 @@
+from imports import *
+
+FPS = 50
+WINDOW_SIZE = WINDOW_WIDTH, WINDOW_HEIGHT = 480, 480
+MAPS_DIR = "levels/maps/"
+TILE_SIZE = 32
+
+
 def load_image(name, color_key=None):
-    import pygame
-    import os
-    import sys
     fullname = os.path.join('../data', name)
     if not os.path.isfile(fullname):
         print(f'Такого файла нет')

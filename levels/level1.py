@@ -145,6 +145,3 @@ def main():
         pygame.display.flip()
         clock.tick(fps)
     pygame.quit()
-
-
-main()

@@ -1,7 +1,6 @@
 #сделал Андреянов Семён 27.12
 
-import pygame
-import random
+from imports import *
 
 window_size = width, height = 480, 480
 fps = 20
@@ -181,6 +180,3 @@ def main():
         pygame.display.flip()
         clock.tick(fps)
     pygame.quit()
-
-
-main()
