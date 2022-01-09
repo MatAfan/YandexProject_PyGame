@@ -3,8 +3,6 @@ from imports import *
 
 def start_screen(screen, clock):
 
-    from Constant import load_image, WIDTH, HEIGHT, FPS
-
     def terminate():
         main_fin()
         pygame.quit()
@@ -45,8 +43,3 @@ def main():
     screen = pygame.display.set_mode(size)
     clock = pygame.time.Clock()
     start_screen(screen, clock)
-
-
-if __name__ == '__main__':
-    main()
-

@@ -77,22 +77,27 @@ def main():
     screen = pygame.display.set_mode(WINDOW_SIZE)
 
     labyrinth = Labyrinth('testmap.txt', [0, 2], 2)
-    hero = Hero((7, 7))
+    for y in range(len(labyrinth.map)):
+        if '3' in y:
+            hero_x = labyrinth.map[y].index(3)
+            hero_y = y
+    hero = Hero((hero_x, hero_y))
     game = Game(labyrinth, hero)
 
     clock = pygame.time.Clock()
+    start_screen(screen, clock)
     running = True
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
 
-
         screen.fill((0, 0, 0))
         game.render(screen)
         game.update()
         pygame.display.flip()
         clock.tick(FPS)
+    final_screen(screen, clock)
     pygame.quit()
 
 
